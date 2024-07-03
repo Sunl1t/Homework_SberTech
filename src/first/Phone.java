@@ -5,8 +5,7 @@ public class Phone {
     private String number;
     private String model;
     public Phone(String number, String model, double weight) {
-        this.number = number;
-        this.model = model;
+        this(number, model);
         this.weight = weight;
     }
 
@@ -21,7 +20,7 @@ public class Phone {
     {
         System.out.println("Звонит" + name);
     }
-
+    
     public String getNumber()
     {
         return number;
@@ -38,9 +37,11 @@ public class Phone {
             System.out.println(phoneNumber);
         }
     }
+
+    @Override
     public String toString()
     {
-        return (number + " " + model + " " + weight);
+        return number + " " + model + " " + weight;
     }
 }
 
