@@ -41,8 +41,9 @@ public class Author {
         this.email = email;
     }
 
+    @Override
     public String toString() {
-        return ("Имя='" + name + ", пол='" + gender + '\'' + ", email='" + email);
+        return "Имя='" + name + ", пол='" + gender + ", email='" + email;
     }
 }
 
