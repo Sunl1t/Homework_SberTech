@@ -4,6 +4,8 @@ public class Matrix {
     private final double[][] data;
     private final int rows;
     private final int cols;
+    private static final String EXCEPTION_ONE = "Матрицы должны быть одинакового размера для сложения";
+    private static final String EXCEPTION_TWO = "Матрицы не могут быть перемножены из-за несовместимых размеров";
 
     public Matrix(int rows, int cols) {
         this.rows = rows;
@@ -19,7 +21,7 @@ public class Matrix {
 
     public Matrix add(Matrix other) {
         if (this.rows != other.rows || this.cols != other.cols) {
-            throw new IllegalArgumentException("Матрицы должны быть одинакового размера для сложения");
+           System.out.println(EXCEPTION_ONE);
         }
         Matrix result = new Matrix(this.rows, this.cols);
         for (int i = 0; i < this.rows; i++) {
@@ -42,7 +44,7 @@ public class Matrix {
 
     public Matrix multiply(Matrix other) {
         if (this.cols != other.rows) {
-            throw new IllegalArgumentException("Матрицы не могут быть перемножены из-за несовместимых размеров");
+           System.out.println(EXCEPTION_TWO);
         }
         Matrix result = new Matrix(this.rows, other.cols);
         for (int i = 0; i < this.rows; i++) {
