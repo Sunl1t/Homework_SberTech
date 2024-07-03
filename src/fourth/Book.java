@@ -43,8 +43,9 @@ public class Book
         this.year = year;
     }
 
+    @Override
     public String toString() {
-        return ("Название: " + title + ", автор: " + author + ", год: " + year);
+        return "Название: " + title + ", автор: " + author + ", год: " + year;
     }
 }
 
