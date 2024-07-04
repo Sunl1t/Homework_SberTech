@@ -1,0 +1,15 @@
+-------------------------------------------------------------------------------
+Test set: FirstTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.675 s <<< FAILURE! -- in FirstTest
+FirstTest.testMethodWithException -- Time elapsed: 0.586 s <<< ERROR!
+org.mockito.exceptions.misusing.NotAMockException: 
+
+Argument passed to when() is not a mock!
+Example of correct stubbing:
+    doThrow(new RuntimeException()).when(mock).someMethod();
+	at FirstTest.testMethodWithException(FirstTest.java:23)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+
