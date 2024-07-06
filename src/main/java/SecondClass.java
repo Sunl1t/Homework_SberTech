@@ -1,7 +1,11 @@
 public class SecondClass
 {
-    FirstClass first;
+    private FirstClass first;
 
+    public SecondClass(FirstClass first) {
+        this.first = first;
+    }
+    
     public String secondToFirst()
     {
         return "General "+ first.firstToSecond();
