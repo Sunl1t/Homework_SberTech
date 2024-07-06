@@ -9,7 +9,7 @@ import org.mockito.Mockito;
 public class FirstTest
 {
 
-    SecondClass second = Mockito.mock(SecondClass.class);
+    private SecondClass second = Mockito.mock(SecondClass.class);
 
     @Test
     public void checkMethodFirst()
