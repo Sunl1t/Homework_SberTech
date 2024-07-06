@@ -1,6 +1,9 @@
+import Sunlit.unit_tests.FirstClass;
+import Sunlit.unit_tests.SecondClass;
 import org.junit.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
+import org.junit.Before;
 import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
 public class CallCountTest
@@ -10,6 +13,11 @@ public class CallCountTest
     @InjectMocks
     private FirstClass exampleTwo;
 
+    @Before
+    public void setUp() {
+        MockitoAnnotations.initMocks(this);
+    }
+    
     public SecondClass setExampleOne() {
         return exampleOne;
     }
