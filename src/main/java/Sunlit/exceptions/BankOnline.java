@@ -1,11 +1,11 @@
-package Sunlit.exceptions;
+package sunlit.exceptions;
 import java.util.*;
 
 public class BankOnline {
 
     public final static int TRANSFER_LIMIT = 50000;
     private final static double CARD_LENGTH = 16;
-    private final List<String> blockedCards = Arrays.asList(
+    private final static List<String> BLOCKED_CARDS = Arrays.asList(
             "1111111111111111",
             "2222222222222222",
             "3333333333333333"
@@ -20,7 +20,7 @@ public class BankOnline {
             throw new InvalidCardNumberException(cardNumber);
         }
 
-        if (blockedCards.contains(cardNumber))
+        if (BLOCKED_CARDS.contains(cardNumber))
         {
             throw new CardBlockedException();
         }
