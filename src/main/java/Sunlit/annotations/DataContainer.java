@@ -1,4 +1,4 @@
-package Sunlit.annotations;
+package sunlit.annotations;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
