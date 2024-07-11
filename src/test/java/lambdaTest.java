@@ -1,4 +1,4 @@
-import Sunlit.lambda.*;
+import sunlit.lambda.*;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 
