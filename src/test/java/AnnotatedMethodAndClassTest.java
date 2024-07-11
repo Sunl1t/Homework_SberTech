@@ -1,4 +1,5 @@
 import Sunlit.annotations.*;
+package sunlit.unit_tests;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
