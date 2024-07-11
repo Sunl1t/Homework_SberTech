@@ -1,4 +1,4 @@
-package Sunlit.unit_tests;
+package sunlit.unit_tests;
 
 public class SecondClass
 {
