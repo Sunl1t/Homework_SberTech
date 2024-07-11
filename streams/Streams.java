@@ -1,4 +1,4 @@
-package Sunlit.streams;
+package sunlit.streams;
 import java.util.Random;
 import java.util.stream.IntStream;
 import java.util.stream.Collectors;
@@ -32,8 +32,8 @@ public class Streams {
     }
 
     public boolean calculateBooleanFromString(String binaryString) {
-        Boolean booleanStream = binaryString.chars().mapToObj(x -> x == '1').reduce(Boolean::logicalAnd).orElse(false);
-        return booleanStream;
+        return binaryString.chars().mapToObj(x -> x == '1').reduce(Boolean::logicalAnd).orElse(false);
+        
     }
 
 
