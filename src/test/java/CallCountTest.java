@@ -13,21 +13,14 @@ public class CallCountTest
     @InjectMocks
     private FirstClass exampleTwo;
 
-    @Before
-    public void setUp() {
-        MockitoAnnotations.initMocks(this);
-    }
-    
-    public SecondClass setExampleOne() {
-        return exampleOne;
-    }
-    public FirstClass setExampleTwo() {
-        return exampleTwo;
-    }
-
-    @Test
+        @Test
     public void callCount()
     {
+        exampleOne = Mockito.mock(SecondClass.class);
+        exampleTwo = Mockito.mock(FirstClass.class);
+        exampleOne.secondToFirst();
+        exampleTwo.firstToSecond();
+        Mockito.when(exampleOne.secondToFirst()).thenReturn("General Kenobi!!");
         exampleTwo.firstToSecond();
         Mockito.verify(exampleOne, Mockito.times(1)).secondToFirst();
     }
