@@ -1,4 +1,4 @@
-package Sunlit.lambda;
+package sunlit.lambda;
 
 public class NonSounding
 {
