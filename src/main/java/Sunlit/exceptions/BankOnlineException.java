@@ -1,4 +1,4 @@
-package Sunlit.exceptions;
+package sunlit.exceptions;
 
 public class BankOnlineException extends Exception {
 
