@@ -1,4 +1,4 @@
-package Sunlit.streams;
+package sunlit.streams;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
