@@ -1,4 +1,4 @@
-package Sunlit.generics;
+package sunlit.generics;
 
 public abstract class ServiceHandler<P, Response, Request> {
     private ResponseValidator <Response> responseValidator;
