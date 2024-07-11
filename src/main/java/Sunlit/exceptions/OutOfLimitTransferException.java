@@ -1,4 +1,4 @@
-package Sunlit.exceptions;
+package sunlit.exceptions;
 
 public class OutOfLimitTransferException extends BankOnlineException {
     public OutOfLimitTransferException(Integer limit) {
