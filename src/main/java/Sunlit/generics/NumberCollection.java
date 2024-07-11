@@ -1,4 +1,4 @@
-package Sunlit.generics;
+package sunlit.generics;
 
 import java.util.Collection;
 import java.util.Collections;
